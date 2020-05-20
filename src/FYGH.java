@@ -134,6 +134,12 @@ Image img = new ImageIcon("src/1.jpg").getImage();
 		JButton info = new JButton("Информация");
 		info.setBounds(525, 400, 150, 25);
 		fr.add(info);
+		
+		info.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            	JOptionPane.showMessageDialog(null,"https://github.com/Yakhin-png/ProjectFYGH","Info", JOptionPane.INFORMATION_MESSAGE);
+            }
+		});
 
 		JLabel info2 = new JLabel("<html>Кнопка информации добавлена</html>");
 		info2.setBounds(525, 325, 150, 50);
